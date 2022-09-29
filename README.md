@@ -1,6 +1,8 @@
 # ProjectSQLServer
  
  ## Phân tích tình hình kinh doanh và xu hướng sử dụng sản phẩm của khách hàng, các dòng film được yêu thích nhất hiện nay thông qua Skila database.
+    SOURCE: https://github.com/anhtu123er/ProjectSQLServer/blob/main/sakila.bak
+    FILE SQL: https://github.com/anhtu123er/ProjectSQLServer/blob/main/Project2.sql
  ## Để cụ thể hóa những dòng xu hướng nói trên chúng ta sẽ tìm cách trả lời các câu hỏi sau đây.
  ## Trước tiên để tránh sử dụng sai sót về sử dụng database chúng ta sử dụng câu lệnh:
       USE Sakila
