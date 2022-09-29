@@ -2,10 +2,10 @@
  
  ## Phân tích tình hình kinh doanh và xu hướng sử dụng sản phẩm của khách hàng, các dòng film được yêu thích nhất hiện nay thông qua Skila database.
  ## Để cụ thể hóa những dòng xu hướng nói trên chúng ta sẽ tìm cách trả lời các câu hỏi sau đây.
- ##Trước tiên để tránh sử dụng sai sót về sử dụng database chúng ta sử dụng câu lệnh:
+ ## Trước tiên để tránh sử dụng sai sót về sử dụng database chúng ta sử dụng câu lệnh:
       USE Sakila
       GO
-##Câu 1: Những bộ phim mà các gia đình đang xem hiện nay là gì? Số lượt thuê của các bộ phim này sắp xếp theo thứ tự tăng dần như thế nào? Từ đó có thể tìm ra các dòng phim được yêu thích nhất hiện nay, đồng thời cũng phát hiện được các bộ phim ít được sử dụng?
+## Câu 1: Những bộ phim mà các gia đình đang xem hiện nay là gì? Số lượt thuê của các bộ phim này sắp xếp theo thứ tự tăng dần như thế nào? Từ đó có thể tìm ra các dòng phim được yêu thích nhất hiện nay, đồng thời cũng phát hiện được các bộ phim ít được sử dụng?
     SELECT M1.title TEN_PHIM, M5.name TYPEFILM , COUNT(M4.rental_id) SO_LAN_THUE
     FROM dbo.film M1
     LEFT JOIN dbo.film_category M2
