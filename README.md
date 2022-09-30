@@ -84,8 +84,12 @@
      ORDER BY M1.first_name +' '+ M1.last_name
      GO
      
-## Câu 6: Kiểm tra số lần thuê của các loại trả trong đó (LATE: trả muộn, EARLY: trả sớm và ONTIME: trả đúng hạn)
-Đối với trường hợp này ta cần sử dụng câu lệnh CASE để phân loại các thể loại trả từ đó kiểm tra số lần thuê.
+## Câu 6: Kiểm tra số lần thuê của các loại trả trong đó (LATE: trả muộn, EARLY: trả sớm và ONTIME: trả đúng hạn)  
+
+
+    Đối với trường hợp này ta cần sử dụng câu lệnh CASE để phân loại các thể loại trả từ đó kiểm tra số lần thuê.
+    
+    
     SELECT COUNT(M1.rental_id) AS N'Số lần thuê', 
      CASE
      WHEN DATEDIFF(DAY,M1.rental_date,M1.return_date) < M3.rental_duration THEN 'EARLY'
